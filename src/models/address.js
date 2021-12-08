@@ -13,17 +13,10 @@ const addressSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  pinCode: {
+  zipCode: {
     type: String,
     required: true,
     trim: true,
-  },
-  locality: {
-    type: String,
-    required: true,
-    trim: true,
-    min: 10,
-    max: 100,
   },
   address: {
     type: String,
@@ -40,11 +33,6 @@ const addressSchema = new mongoose.Schema({
   state: {
     type: String,
     required: true,
-  },
-  landmark: {
-    type: String,
-    min: 10,
-    max: 100,
   },
   alternatePhone: {
     type: String,
